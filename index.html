@@ -1,0 +1,758 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>网页标题</title>
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css">
+<link rel="stylesheet" type="text/css" href="css/webuploader.css">
+</head>
+
+<body>
+<div class="ui-droplist mt-20 ml-50 fixed-menu-from" data-text="下拉选择" data-tier="1">
+	<div class="trigger">
+		<span class="txt">2017</span>
+		<i class="fa fa-angle-down"></i>
+	</div>
+	<ul>
+		<li><a href="#">201720172017</a></li>
+		<li><a href="#">2016</a></li>
+		<li><a href="#">2015</a></li>
+	</ul>
+</div>
+<p style="margin:20px 30%;">
+    <input type="text" value="+86" class="input-txt phone-number1">
+    <input type="text" value="" class="input-txt phone-number2" id="phoneNum">
+    <a href="#" class="get-code get-code-disable ml-15" id="getCode">获取短信验证码</a>
+</p>
+<p style="margin:20px 30%;">
+    <span class="password-wrap">
+        <input type="password" value="" class="input-txt" style="width:250px;" placeholder="6～12位字母和数字的组合">
+        <i></i>
+    </span>
+</p>
+
+<span style="margin:20px 40%;" class="fixed-menu-from" data-text="弹出层、提示层" data-tier="1">
+	<a href="#" class="abtn-green" id="openToast1">toast-成功</a>
+	<a href="#" class="abtn-green" id="openToast2">toast-失败</a>
+	<a href="#" class="abtn-green" id="openToast3">toast-loading</a>
+	<a href="#" class="abtn-green" id="openToast4">toast-纯文本</a>
+</span>
+<a href="#" class="abtn-orange" id="btnLayer" style="margin:20px 40%;">打开div弹出层</a>
+<a href="#" class="abtn-orange" id="btnLayerTable" style="margin:20px 40%;">打开tab弹出层</a>
+<a href="#" class="abtn-blue" id="btnAuto" style="margin:20px 40%;">打开自动关闭提示层</a>
+<a href="#" class="abtn-green ui-file" style="margin:20px 40%;">模拟文件上传<input type="file" name="file" id="upFile"></a>
+
+<div class="ui-login fixed-menu-from" data-text="密码安全度" data-tier="1">
+	<form action="">
+        <p class="user">
+            <input type="text" class="input-txt" id="user" name="user" placeholder="请输入用户名">
+        </p>
+        <p class="pwd">
+            <input type="password" class="input-txt" id="pwd" name="pwd" placeholder="请输入密码">
+        </p>
+        <p class="ui-acc"><span>6-16位，由字母（区分大小写）、数字、符号组成</span></p>
+        <p><a href="#" class="abtn-blue">登录</a></p>
+    </form>
+</div>
+
+<div class="ui-countDown" id="countdown1"></div>
+
+<div class="ui-rating fixed-menu-from" data-text="评分系统" data-tier="1">
+	<p>
+		<span class="rating-tt">描述相符：</span>
+        <span class="rating-star">
+            <a href="javascript:void(0);" class="star1"></a>
+            <a href="javascript:void(0);" class="star2"></a>
+            <a href="javascript:void(0);" class="star3"></a>
+            <a href="javascript:void(0);" class="star4"></a>
+            <a href="javascript:void(0);" class="star5"></a>
+        </span>
+        <span class="rating-info">1分</span>
+	</p>
+	<p class="odd">
+		<span class="rating-tt">描述相符：</span>
+        <span class="rating-star">
+            <a href="javascript:void(0);" class="star1"></a>
+            <a href="javascript:void(0);" class="star2"></a>
+            <a href="javascript:void(0);" class="star3"></a>
+            <a href="javascript:void(0);" class="star4"></a>
+            <a href="javascript:void(0);" class="star5"></a>
+        </span>
+        <span class="rating-info">1分</span>
+	</p>
+</div>
+
+<span class="fixed-menu-from" data-text="省市区多级联动" data-tier="1"></span>
+<a href="#" class="abtn-blue" id="Btnmulti" style="margin:20px 40%;">多级联动菜单</a>
+<div id="multi-select"></div>
+<div class="multi-select">
+	<div class="multi-select-text">
+		<input type="text" class="form-control input-txt" />
+		<i class="fa fa-caret-down"></i>
+	</div>
+</div>
+
+<span class="fixed-menu-from" data-text="表单" data-tier="1"></span>
+<span class="fixed-menu-from" data-text="下拉框" data-tier="2"></span>
+<select name="d1" style="display:block;width:80%;margin:20px auto;">
+    <option value="11">可下拉可输入</option>
+    <option value="22">一年级二班</option>
+    <option value="33">一年级三班</option>
+    <option value="44">一年级四班</option>
+    <option value="55">一年级五班</option>
+</select>
+
+<select name="d2" data-edit="0" style="display:block;width:80%;margin:20px auto;">
+    <option value="11">可下拉不可输入</option>
+</select>
+
+<select name="d3" disabled="disabled" style="display:block;width:80%;margin:20px auto;">
+    <option value="11">不可操作下拉框</option>
+</select>
+
+<div class="ui-radio-list my-20 t-center fixed-menu-from" data-text="单选框" data-tier="2">
+    <label for="a1"><input type="radio" id="a1" name="a" value="1">是</label>
+    <label for="a2"><input type="radio" id="a2" name="a" value="2" checked>否</label>
+    <label for="a3"><input type="radio" id="a3" name="a" value="3" disabled>不可选择</label>
+    <label for="a4"><input type="radio" id="a4" name="a" value="4" disabled checked>不可选择</label>
+</div>
+
+<div class="ui-radio-list my-20 t-center">
+    <label for="b1"><input type="radio" id="b1" name="b" value="1">是</label>
+    <label for="b2"><input type="radio" id="b2" name="b" value="2" checked>否</label>
+    <label for="b3"><input type="radio" id="b3" name="b" value="3" disabled>不可选择</label>
+    <label for="b4"><input type="radio" id="b4" name="b" value="4" disabled checked>不可选择</label>
+</div>
+
+<div class="ui-checkbox-list my-20 t-center fixed-menu-from" data-text="复选框" data-tier="2">
+	<label for="c1"><input type="checkbox" id="c1" name="c" value="1">项目1</label>
+    <label for="c2"><input type="checkbox" id="c2" name="c" value="2">项目2</label>
+    <label for="c3"><input type="checkbox" id="c3" name="c" value="3">项目3</label>
+    <label for="c4"><input type="checkbox" id="c4" name="c" value="4" disabled>项目4-不可选择</label>
+    <label for="c5"><input type="checkbox" id="c5" name="c" value="5" disabled checked>项目4-不可选择</label>
+</div>
+
+<div style="width:250px;margin:20px auto;" class="fixed-menu-from" data-text="文本框" data-tier="2">
+    <p class="pa-5"><input type="text" class="input-date"></p>
+    <p class="pa-5"><input type="text" class="input-txt"><span class="onTips">11111111</span></p>
+    <p class="pa-5"><input type="text" class="input-txt input-readonly" readonly></p>
+    <p class="fn-clear pa-5"><input type="text" class="input-txt input-txt-focus"><span class="onFocus">11111111</span></p>
+    <p class="fn-clear pa-5"><input type="text" class="input-txt input-txt-error"><span class="onError">11111111</span></p>
+    <p class="fn-clear pa-5"><input type="text" class="input-txt input-txt-correct"><span class="onCorrect">11111111</span></p>
+    <p class="pa-5"><input type="text" class="input-txt" id="inputTagator" value="标签1,标签2,标签3"></p>
+</div>
+
+<div class="msgArea-wrap" style="width:250px;margin:20px auto;">
+    <textarea id="msgArea" class="text-area" placeholder="填写留言信息..."></textarea>
+</div>
+
+<div style="width:250px;margin:20px auto;">
+    <input type="text" class="input-txt ui-zoom-txt" autocomplete="off" maxlength="18" style="width:150px;" placeholder="文字输入放大效果" value="">
+</div>
+
+<p id="mouseTips1" style="width:100px;height:100px;background:#000;margin:20px auto 0;color:#fff;">鼠标点击显示</p>
+
+<p id="mouseTips2" style="width:100px;height:100px;background:#000;margin:20px auto 0;color:#fff;">鼠标滑过显示</p>
+
+<span class="fixed-menu-from" data-text="焦点图、幻灯片、文字滚动" data-tier="1"></span>
+<div class="ui-slideplay" id="focuSlide1">
+    <ul>
+        <li data-title="标题1"><a href="#" target="_blank"><img src="images/temp/banner1.jpg" width="740" height="306" /></a></li>
+        <li data-title="标题2"><a href="#" target="_blank"><img src="images/temp/banner1.jpg" width="740" height="306" /></a></li>
+        <li data-title="标题3"><a href="#" target="_blank"><img src="images/temp/banner1.jpg" width="740" height="306" /></a></li>
+        <li data-title="标题4"><a href="#" target="_blank"><img src="images/temp/banner1.jpg" width="740" height="306" /></a></li>
+        <li data-title="标题5"><a href="#" target="_blank"><img src="images/temp/banner1.jpg" width="740" height="306" /></a></li>
+    </ul>
+</div>
+
+
+<div class="ui-slideplay ui-slideplay2" id="floorSlide2">
+    <ul>
+        <li data-title="标题1"><a href="#" target="_blank"><img src="images/temp/floor_banner1.jpg" width="454" height="231" /></a></li>
+        <li data-title="标题2"><a href="#" target="_blank"><img src="images/temp/floor_banner1.jpg" width="454" height="231" /></a></li>
+        <li data-title="标题3"><a href="#" target="_blank"><img src="images/temp/floor_banner1.jpg" width="454" height="231" /></a></li>
+        <li data-title="标题4"><a href="#" target="_blank"><img src="images/temp/floor_banner1.jpg" width="454" height="231" /></a></li>
+    </ul>
+</div>
+
+
+<div class="ui-gotop">
+    <a href="#" class="btn-code">二维码</a>
+    <a href="#" class="btn-help">帮助中心</a>
+    <a href="#" class="btn-top" style="display:none;">回到顶部</a>
+    <div class="qr-code">
+        <p><img src="images/temp/qrcode.png" alt=""></p>
+        <p>扫码下载</p>
+    </div>
+</div>
+
+<div class="ui-text-slide" id="TextSlide" style="width:300px;border:1px solid #ccc;margin:0 auto;">
+	<ul>
+		<li>标题标题标题标题标题标题1</li>
+		<li>标题标题标题标题标题标题2</li>
+		<li>标题标题标题标题标题标题3</li>
+		<li>标题标题标题标题标题标题4</li>
+		<li>标题标题标题标题标题标题5</li>
+		<li>标题标题标题标题标题标题6</li>
+		<li>标题标题标题标题标题标题7</li>
+		<li>标题标题标题标题标题标题8</li>
+		<li>标题标题标题标题标题标题9</li>
+		<li>标题标题标题标题标题标题10</li>
+	</ul>
+</div>
+
+<span class="fixed-menu-from" data-text="页面模板" data-tier="1"></span>
+<div style="width:90%;margin:20px auto;" class="fixed-menu-from" data-text="面包屑" data-tier="2">
+	<ul id="breadcrumb" class="fn-clear">
+		<li class="active"><a href="#">首页</a></li>
+		<li><a href="#">内页</a></li>
+		<li><a href="#">详情页</a></li>
+	</ul>
+	<span class="fixed-menu-from" data-text="步骤导航" data-tier="2"></span>
+	<div class="step-outer">
+		<ul class="ui-step ui-step-4">
+			<li class="current">
+				<div class="ui-step-line"></div>
+				<div class="ui-step-cover">
+					<span class="num">1</span>
+					<span class="txt">填写密保问题</span>
+				</div>
+			</li>
+			<li>
+				<div class="ui-step-line"></div>
+				<div class="ui-step-cover">
+					<span class="num">2</span>
+					<span class="txt">验证密保问题</span>
+				</div>
+			</li>
+			<li>
+				<div class="ui-step-line"></div>
+				<div class="ui-step-cover">
+					<span class="num">3</span>
+					<span class="txt">验证密保问题</span>
+				</div>
+			</li>
+			<li class="last">
+				<div class="ui-step-line"></div>
+				<div class="ui-step-cover">
+					<span class="num">4</span>
+					<span class="txt">完成</span>
+				</div>
+			</li>
+		</ul>
+		<div class="step-wrap">
+			<div class="step-item">
+				<p>
+					<a href="#" class="abtn-blue mx-10 js-next">下一步</a>
+				</p>
+			</div>
+			<div class="step-item" style="display: none;">
+				<p>
+					<a href="#" class="abtn-orange mx-10 js-prev">上一步</a>
+					<a href="#" class="abtn-blue mx-10 js-next">下一步</a>
+				</p>
+			</div>
+			<div class="step-item" style="display: none;">
+				<p>
+					<a href="#" class="abtn-orange mx-10 js-prev">上一步</a>
+					<a href="#" class="abtn-blue mx-10 js-next">下一步</a>
+				</p>
+			</div>
+			<div class="step-item" style="display: none;">
+				<p>
+					<a href="#" class="abtn-orange mx-10 js-prev">上一步</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<p class="ui-crumbs">当前位置：<a href="#">首页</a> &gt; <span>详细页面</span></p>
+	<span class="fixed-menu-from" data-text="tab切换" data-tier="2"></span>
+    <div class="ui-tab mt-20">
+        <ul class="ui-tab-list fn-clear">
+            <li class="current">商品详情</li>
+            <li>用户评价</li>
+            <li>历史成交</li>
+        </ul>
+        <div class="ui-tab-wrap">
+        	<div class="ui-tab-module">1</div>
+        	<div class="ui-tab-module" style="display:none;">2</div>
+        	<div class="ui-tab-module" style="display:none;">3</div>
+        </div>
+    </div>
+    <span class="fixed-menu-from" data-text="模糊查找" data-tier="2"></span>
+    <div class="ui-search my-20" style="z-index: 101;width:212px">
+    	<input type="text" class="input-txt" placeholder="模糊查找" style="width:200px;">
+    	<a href="#" class="abtn-blue abtn-search">查找</a>
+        <div class="ui-search-list">
+            <ul>
+                <li><span>张</span>三</li>
+                <li><span>张</span>方奎方奎方奎方奎方奎方奎方奎方奎方奎</li>
+                <li><span>张</span>明宇</li>
+                <li><span>张</span>明宇</li>
+                <li><span>张</span>明宇</li>
+                <li><span>张</span>明宇</li>
+                <li><span>张</span>明宇</li>
+                <li><span>张</span>明宇</li>
+            </ul>
+        </div>
+    </div>
+    <span class="fixed-menu-from" data-text="查询条件" data-tier="2"></span>
+    <div class="ui-query">
+    	<div class="ui-query-inner fn-clear">
+        	<span class="tt fn-left mt-3">姓名：</span>
+            <input type="text" class="input-txt fn-left">
+            <span class="tt fn-left mt-3 ml-20">班级：</span>
+            <select name="d3" style="float: left;">
+            	<option value="11">高三一班</option>
+            </select>
+        	<span class="tt fn-left mt-3 ml-20">是否通过：</span>
+        	<span class="fixed-menu-from" data-text="switch" data-tier="3"></span>
+            <label class="ui-switch-label fn-left">
+				<input name="switch-field-1" class="ui-switch" type="checkbox">
+				<span class="lbl"></span>
+			</label>
+            <a href="#" class="abtn-blue fn-left ml-20">查找</a>
+        </div>
+        <span class="fixed-menu-from" data-text="邮箱自动填充" data-tier="3"></span>
+    	<div class="ui-query-inner fn-clear">
+        	<span class="tt fn-left mt-3">标题1：</span>
+            <input type="text" class="input-txt fn-left" style="width:100px;">
+        	<span class="tt fn-left mt-3 ml-20">标题2：</span>
+            <input type="text" class="input-txt fn-left" style="width:200px;">
+        	<span class="tt fn-left mt-3 ml-20">邮箱自动填充：</span>
+            <input type="text" class="input-txt" id="email" placeholder="输入邮箱" style="width:200px;">
+        </div>
+    </div>
+    <span class="fixed-menu-from" data-text="filter筛选条件" data-tier="2"></span>
+    <div class="ui-filter mt-20">
+    	<div class="fn-clear ui-filter-inner ui-filter-checkbox">
+    		<p class="tt">多选条件：</p>
+            <p class="item">
+                <span class="current">test1</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+            </p>
+    	</div>
+    	<div class="fn-clear ui-filter-inner ui-filter-radio">
+    		<p class="tt">单选条件：</p>
+            <p class="item">
+                <span class="current">test1</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+                <span>test</span>
+            </p>
+    	</div>
+    </div>
+    <span class="fixed-menu-from" data-text="table表格" data-tier="2"></span>
+	<table class="ui-table-list mt-20">
+		<thead>
+			<tr>
+				<th>1111</th>
+				<th>2222</th>
+				<th>3333</th>
+				<th>4444</th>
+				<th>5555</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1111</td>
+				<td>2222</td>
+				<td>3333</td>
+				<td>4444</td>
+				<td>5555</td>
+			</tr>
+			<tr>
+				<td>1111</td>
+				<td>2222</td>
+				<td>3333</td>
+				<td>4444</td>
+				<td>5555</td>
+			</tr>
+			<tr>
+				<td>1111</td>
+				<td>2222</td>
+				<td>3333</td>
+				<td>4444</td>
+				<td>5555</td>
+			</tr>
+			<tr>
+				<td>1111</td>
+				<td>2222</td>
+				<td>3333</td>
+				<td>4444</td>
+				<td>5555</td>
+			</tr>
+		</tbody>
+	</table>
+	<span class="fixed-menu-from" data-text="page分页" data-tier="2"></span>
+    <div class="ui-page">
+        <span>共15条</span>
+        <span class="ml-10">第1页</span>
+        <span class="ml-10">每页 <input type="text" class="txt" value="20"> 条</span>
+        <span class="ml-10">跳转到 <input type="text" class="txt" value="20"> 页</span>
+        <a href="#" class="ml-10">首页</a>
+        <a href="#">上一页</a>
+        <a href="#">下一页</a>
+        <a href="#">尾页</a>
+        <span class="no">不能点</span>
+    </div>
+    <span class="fixed-menu-from" data-text="form表单" data-tier="2"></span>
+    <table class="ui-table-form">
+    	<tbody>
+    		<tr>
+    			<th>姓名：</th>
+    			<td><input type="text" class="input-txt" placeholder="请输入您的姓名"></td>
+    		</tr>
+    		<tr>
+    			<th>性别：</th>
+    			<td>
+                	<input type="radio" name="d" value="1">男
+                	<input type="radio" name="d" value="2" class="ml-30">女
+                </td>
+    		</tr>
+    		<tr>
+    			<th>所教课程：</th>
+    			<td>
+                	<input type="checkbox" name="e" value="1">语文
+                	<input type="checkbox" name="e" value="2" class="ml-30">数学
+                	<input type="checkbox" name="e" value="3" class="ml-30">历史
+                </td>
+    		</tr>
+    		<tr>
+    			<th>职称：</th>
+    			<td>
+                    <select name="d4">
+                        <option value="11">高级</option>
+                        <option value="22">中级</option>
+                    </select>
+                </td>
+    		</tr>
+            <tr>
+            	<th>&nbsp;</th>
+            	<td><a href="#" class="abtn-blue">提交</a></td>
+            </tr>
+    	</tbody>
+    </table>
+    
+    <span class="fixed-menu-from" data-text="flash" data-tier="1"></span>
+    <object type="application/x-shockwave-flash" data="images/temp/sunrise.swf" width="400" height="300">
+        <param name="movie" value="images/temp/sunrise.swf" />
+        <param name="allowFullScreen" value="true" />
+        <param name="menu" value="false" />
+        <param name="quality" value="high" />
+    </object>
+    
+    <span class="fixed-menu-from" data-text="滚动条美化" data-tier="1"></span>
+    <div id="navScroll" style="width:400px;height:300px;background:#000;">
+        <div class="ui-scroll-inner" style="height:1000px;"></div>
+    </div>
+    
+    <div id="scrollBottom" style="width:400px;height:300px;background:#000;margin-top:20px;overflow-x:hidden;overflow-y: auto;">
+        <div style="height:1000px;"></div>
+    </div>
+    
+    <span class="fixed-menu-from" data-text="百度webuploader" data-tier="1"></span>
+	<div class="upFile-wrap" style="width: 700px;margin-top: 20px;">
+		<p class="webuploader-opt">
+			<a href="#" class="webuploader-pick"><i class="fa fa-plus"></i>选择文件</a>
+			<span class="webuploader-pick-tips">最大允许上传500M，只支持flv、mp4、wrf格式</span>
+		</p>
+		<ul class="webuploader-list">
+			<li>
+    			<p class="file-name">数学第一课课件.ppt</p>
+                <p class="file-loading fn-clear">
+                	<a href="#" class="fn-right fa fa-remove cancel-btn" title="取消"></a>
+                	<span class="per-bg"><span class="per-in" style="width:70%;"></span></span>
+                    <span class="per-txt">正在上传70%</span>
+                </p>
+    		</li>
+    		<li>
+    			<p class="file-name-edit" style="display: none;">
+                	<input type="text" name="" id="" class="input-txt" />
+                </p>
+    			<p class="file-name">数学第一课课件.ppt</p>
+    			<p class="file-loading fn-clear">
+                	<a href="#" class="fn-right fa fa-remove delete-btn" title="删除"></a>
+                	<a href="#" class="fn-right fa fa-check save-btn" title="保存" style="display: none;"></a>
+                	<a href="#" class="fn-right fa fa-edit edti-btn" title="编辑"></a>
+                    <span class="per-txt">成功</span>
+                </p>
+    		</li>
+    		<li>
+    			<p class="file-name">数学第一课课件.ppt</p>
+                <p class="tips-error fn-clear">
+                	<a href="#" class="fn-right fa fa-remove delete-btn" title="删除"></a>
+                	<a href="#" class="fn-right fa fa-upload retry-btn" title="重试"></a>
+                	<span class="error-txt">错误提示</span>
+                </p>
+    		</li>
+    	</ul>
+	</div>
+</div>
+
+<div class="ui-skip">
+	<p class="tt">密保问题设置成功，请牢记您的密保问题！</p>
+	<p class="dd"><span class="cout-down">3</span>秒后自动返回</p>
+</div>
+
+<span class="fixed-menu-from" data-text="echart图表" data-tier="1"></span>
+<div id="echart-stat" style="width:1200px;height: 400px;margin: 50px 0;"></div>
+
+<div class="ui-layer" id="uiLayer" style="display:none;width:500px;">
+	<p class="tt"><a href="#" class="close"></a><span class="title">标题</span></p>
+    <div class="wrap" style="height:200px;">111</div>
+    <p class="dd">
+        <a href="#" class="abtn-blue close"><span>保存</span></a>
+        <a href="#" class="abtn-gray close"><span>取消</span></a>
+    </p>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0" class="ui-layer-table" id="uiLayerTable" style="display:none;width:500px;">
+    <thead>
+        <tr>
+            <td class="left">&nbsp;</td>
+            <td>
+                <p class="tt">
+                    <span class="title">标题</span>
+                    <a href="javascript:void(0);" class="close" hidefocus="true">关闭</a>
+                </p>
+            </td>
+            <td class="right">&nbsp;</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="left">&nbsp;</td>
+            <td>sdfsdssdds</td>
+            <td class="right">&nbsp;</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="left">&nbsp;</td>
+            <td>
+                <a href="#" class="abtn-blue close"><span>保存</span></a>
+                <a href="#" class="abtn-gray close"><span>取消</span></a>
+            </td>
+            <td class="right">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="ui-layer-auto" id="autoLayer" style="display:none;top:430px;left:0;">
+    <p class="txt">提示</p>
+    <a href="#" class="close" title="关闭"></a>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--script type="text/javascript" src="js/hammer.js"></script--><!--移动端幻灯片左右滑动切换效果，PC端请取消-->
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/jquery.GoTop.js"></script>
+<script type="text/javascript" src="js/jquery.Layer.js"></script>
+<script type="text/javascript" src="js/jquery.FormNice.js"></script>
+<script type="text/javascript" src="js/jquery.FormCount.js"></script>
+<script type="text/javascript" src="js/jquery.SlidePlay.js"></script>
+<script type="text/javascript" src="js/jquery.TextSlide.js"></script>
+<script type="text/javascript" src="js/jquery.TextZoom.js"></script>
+<script type="text/javascript" src="js/jquery.MouseTips.js"></script>
+<script type="text/javascript" src="js/jquery.CheckPassword.js"></script>
+<script type="text/javascript" src="js/jquery.SendCode.js"></script>
+<script type="text/javascript" src="js/jquery.Rating.js"></script>
+<script type="text/javascript" src="js/jquery.Search.js"></script>
+<script type="text/javascript" src="js/jquery.mailAutoComplete.js"></script>
+<script type="text/javascript" src="js/jquery.CountDown.js"></script>
+<script type="text/javascript" src="js/jquery.MultiSelect.js"></script>
+<script type="text/javascript" src="js/jquery.MultiSelect1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollFixed.js"></script>
+<script type="text/javascript" src="js/jquery.Tagator.js"></script>
+<script type="text/javascript" src="js/myscript.js"></script>
+<script type="text/javascript">
+$(function(){
+	//文字输入放大效果
+	textzoom('.ui-zoom-txt','top',4,'-');
+	
+	//幻灯片
+	sideplay('#focuSlide1',2);
+	sideplay('#floorSlide2',1);
+	
+	//弹出层
+	layer('#btnLayer','#uiLayer','.close','标题1');
+	layer('#btnLayerTable','#uiLayerTable','.close','标题2');
+		
+	//自动关闭弹出层提示
+	autoLayer('#btnAuto','#autoLayer',1,'.close','标题3');
+	
+	//toast弹出层
+	$('#openToast1').click(function(e){
+		e.preventDefault();
+		toast('充值成功', 'succeed', 2000, 1);
+	});
+	$('#openToast2').click(function(e){
+		e.preventDefault();
+		toast('充值失败', 'defeated', 2000, 0);
+	});
+	$('#openToast3').click(function(e){
+		e.preventDefault();
+		toast('正在充值', 'loading', 2000, 1);
+	});
+	$('#openToast4').click(function(e){
+		e.preventDefault();
+		toast('这是纯文本提示', 'text', 5000, 1);
+	});
+	
+	//密码强度验证功能
+	checkpassword('#pwd');
+	
+	//带字符数计算功能的文本域
+	formcount('#msgArea',100)
+	
+	//发送验证码
+	sendcode('#phoneNum','#getCode',59,5)
+	
+	//鼠标滑进、滑出、点击title模拟提示效果
+	mouseTips('click','#mouseTips1','周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美',0,100);
+	mouseTips('hover','#mouseTips2','周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美周晓晨、李大仁、王大力、金佳仁、诸葛优异、黄河、天天向上、天天、甜甜、王小明、刘佳美',100,0);
+	
+	//内部滚动条美化
+	$('#navScroll').mCustomScrollbar();
+	
+	//倒计时
+	countdown('#countdown1','2029/08/27 16:01:00');
+	
+	//文字单行/多行滚动停顿
+	$('#TextSlide').Scroll({line:4,speed:500,timer:3000});
+	
+	//多级联动
+	multiselect('#Btnmulti','#multi-select');
+	
+	//滚动条居于底部
+	$('#scrollBottom').scrollTop( $('#scrollBottom')[0].scrollHeight);
+	
+	//邮箱自动填充
+	$('#email').mailAutoComplete({
+		emails:['qq.com','163.com','126.com','sina.com','sohu.com','yahoo.cn','gmail.com','hotmail.com','live.cn']
+	});
+	
+	//标签
+	$('#inputTagator').tagator({
+		autocomplete: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', '标签']
+	});
+	
+	//3秒跳转
+	function jump(count) { 
+        window.setTimeout(function(){ 
+            count--; 
+            if(count > 0) { 
+                $('.cout-down').text(count); 
+                jump(count); 
+            } else { 
+                //location.href="index.html";
+                alert('这里输入跳转到页面');
+            } 
+        }, 1000); 
+    } 
+    jump(3);
+    
+    
+    //echart图表
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('echart-stat'));
+    // 指定图表的配置项和数据
+    option = {
+	    title : {
+	        text: '未来一周气温变化',
+	        subtext: '纯属虚构'
+	    },
+	    tooltip : {
+	        trigger: 'axis'
+	    },
+	    legend: {
+	        data:['最高气温','最低气温']
+	    },
+	    toolbox: {
+	        show : false,
+	        feature : {
+	            mark : {show: true},
+	            dataView : {show: true, readOnly: false},
+	            magicType : {show: true, type: ['line', 'bar']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    calculable : true,
+	    xAxis : [
+	        {
+	            type : 'category',
+	            boundaryGap : false,
+	            data : ['周一','周二','周三','周四','周五','周六','周日']
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value',
+	            axisLabel : {
+	                formatter: '{value} °C'
+	            }
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'最高气温',
+	            type:'line',
+	            data:[11, 11, 15, 13, 12, 13, 10],
+	            markPoint : {
+	                data : [
+	                    {type : 'max', name: '最大值'},
+	                    {type : 'min', name: '最小值'}
+	                ]
+	            },
+	            markLine : {
+	                data : [
+	                    {type : 'average', name: '平均值'}
+	                ]
+	            }
+	        },
+	        {
+	            name:'最低气温',
+	            type:'line',
+	            data:[1, -2, 2, 5, 3, 2, 0],
+	            markPoint : {
+	                data : [
+	                    {name : '周最低', value : -2, xAxis: 1, yAxis: -1.5}
+	                ]
+	            },
+	            markLine : {
+	                data : [
+	                    {type : 'average', name : '平均值'}
+	                ]
+	            }
+	        }
+	    ]
+	};
+    // 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+    
+})
+</script>
+<!--[if IE 6]>
+<script src="js/letskillie6.zh_CN.pack.js"></script>
+<![endif]-->
+</body>
+</html>
